@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
   
   attr_accessor :status 
@@ -26,7 +27,7 @@ class Transfer
       reject_transfer
     end 
   end 
-  
+  binding.pry 
   
   def reverse_transfer 
     if valid? && receiver.balance > amount && self.status == "complete"
