@@ -39,5 +39,8 @@ class Transfer
     
   end 
   
+  def reject_transfer 
+    self.status = "rejected" 
+    "Transaction "
   
 end   
